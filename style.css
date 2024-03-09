@@ -1,0 +1,307 @@
+body {
+    background-color: lightgrey;
+    float: none !important;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 auto !important;
+    max-width: 1080px;
+}
+
+main {
+    background-color: whitesmoke;
+}
+
+button {
+    background-color: rgb(212, 194, 182);
+    border: none;
+    color: rgb(65, 70, 74);
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    transition-duration: .4s;
+}
+
+.header {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: space-between;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.header>#header-button {
+    border-radius: 1cap;
+    font-size: 14px;
+    margin: 10px 10px;
+    padding: 13px 8px 10px 8px;
+}
+
+.header>#header-button:hover {
+    background-color: rgb(65, 70, 74);
+    color: whitesmoke;
+}
+
+.header>#menu {
+    margin: 25px 10px 10px 0px;
+    text-align: right;
+}
+
+.header>#menu>.menu-text {
+    color: rgb(65, 70, 74);
+    font-family: 'Neuton', serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 80px;
+    text-decoration: none;
+}
+
+.header>#menu>.menu-text:hover {
+    color: rgb(76, 115, 120);
+}
+
+.banner {
+    height: 410px;
+    position: relative;
+    text-align: center;
+    top: 55px;
+    width: 100%;
+}
+
+#banner-text {
+    position: relative;
+    top: -385px;
+}
+
+h1 {
+    /* site title */
+    color: whitesmoke;
+    font-size: 80px;
+    font-weight: 350;
+    letter-spacing: 11px;
+    margin-top: 40px;
+    text-shadow: 2px 2px 1px rgb(65, 70, 74);
+}
+
+h2 {
+    /* tagline */
+    color: whitesmoke;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin-top: -40px;
+    text-shadow: 2px 2px 1px rgb(65, 70, 74);
+    text-wrap: wrap;
+}
+
+#banner-button {
+    border-radius: 1cap;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 20px 20px 16px 20px;
+}
+
+#banner-button:hover {
+    background-color: rgb(65, 70, 74);
+    color: whitesmoke;
+}
+
+.spencer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 55px;
+}
+
+#headshot {
+    border: 3px solid rgb(65, 70, 74);
+    height: 370px;
+    margin: 12px 10px 10px 10px;
+    padding: 5px;
+}
+
+.bio {
+    background-color: rgb(65, 70, 74);
+    color: whitesmoke;
+    margin: 8px 8px 8px 10px;
+    padding: 0px 10px;
+}
+
+h3 {
+    /* name, process title*/
+    font-size: 36px;
+    font-weight: 325;
+    margin: 15px 0 0 0;
+}
+
+h4 {
+    /* prof title, box titles */
+    font-size: 24px;
+    font-weight: 300;
+    margin: 15px 0 0 0;
+}
+
+p {
+    font-family: 'Neuton', serif;
+    font-size: 18px;
+    font-weight: 250;
+    letter-spacing: .5px;
+    line-height: 21px;
+    margin: 10px 0 5px 0;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 55px;
+    width: 100%;
+}
+
+.boxes>.specialties,
+.boxes>.treatments {
+    background-color: rgb(212, 194, 182);
+    color: rgb(65, 70, 74);
+    text-align: center;
+    width: 33.3%
+}
+
+.boxes>.telehealth {
+    background-color: rgb(76, 115, 120);
+    color: whitesmoke;
+    text-align: center;
+    width: 33.4%;
+}
+
+hr {
+    border: .5px solid;
+    position: relative;
+    top: 0px;
+    width: 50%;
+}
+
+.specialties>p,
+.treatments>p {
+    font-weight: 350;
+    margin-bottom: 10px;
+}
+
+.telehealth>p {
+    margin: 10px 20px 0px 20px;
+}
+
+.telehealth>p>a:link,
+.telehealth>p>a:visited {
+    color: whitesmoke;
+}
+
+.telehealth>p>a:hover,
+.telehealth>p>a:visited:hover {
+    color: rgb(65, 70, 74);
+}
+
+.process {
+    background-color: rgb(76, 115, 120);
+    padding: 3px 30px 15px 10px;
+    position: relative;
+    top: 65px;
+}
+
+.process>h3 {
+    color: whitesmoke;
+}
+
+.collapsible {
+    background-color: rgb(212, 194, 182);
+    border: none;
+    color: rgb(65, 70, 74);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 325;
+    margin: 10px 0 0 10px;
+    outline: none;
+    padding: 18px;
+    text-align: left;
+    width: 100%;
+}
+
+.active,
+.collapsible:hover {
+    background-color: whitesmoke;
+}
+
+.collapsible:after {
+    color: rgb(65, 70, 74);
+    content: '+';
+    float: right;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.active:after {
+    color: rgb(65, 70, 74);
+    content: "-";
+}
+
+.content {
+    background-color: whitesmoke;
+    color: rgb(65, 70, 74);
+    left: 10px;
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 18px;
+    position: relative;
+    transition: max-height 0.2s ease-out;
+}
+
+footer {
+    color: rgb(65, 70, 74);
+    background-color: whitesmoke;
+    position: relative;
+    top: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+h5 {
+    font-family: 'Neuton', serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    margin: 5px 0px 0px 0px;
+}
+
+.footer-list>ul {
+    list-style: none;
+    font-family: 'Neuton', serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    margin-top: 0px;
+    padding-left: 20px;
+}
+
+.copyright {
+    background-color: whitesmoke;
+    position: relative;
+    text-align: center;
+    top: 45px;
+    z-index: 1;
+}
+
+.copyright>p {
+    color: rgb(65, 70, 74);
+    font-family: 'Neuton', serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
