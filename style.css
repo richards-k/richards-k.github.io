@@ -7,11 +7,12 @@ body {
 }
 
 main {
-    background-color: whitesmoke;
+    background-color: rgb(249, 249, 249);
+    height: 100%;
 }
 
 button {
-    background-color: rgb(212, 194, 182);
+    background-color: rgb(201, 193, 182);
     border: none;
     color: rgb(65, 70, 74);
     cursor: pointer;
@@ -20,7 +21,7 @@ button {
 }
 
 .header {
-    background-color: whitesmoke;
+    background-color: rgb(249, 249, 249);
     display: flex;
     flex-direction: row;
     height: 55px;
@@ -41,7 +42,7 @@ button {
 
 .header>#header-button:hover {
     background-color: rgb(65, 70, 74);
-    color: whitesmoke;
+    color: rgb(249, 249, 249);
 }
 
 .header>#menu {
@@ -49,17 +50,19 @@ button {
     text-align: right;
 }
 
-.header>#menu>.menu-text {
+.header>#menu>.menu-text,
+.header>#menu>.menu-text:visited {
     color: rgb(65, 70, 74);
     font-family: 'Neuton', serif;
     font-size: 18px;
     font-weight: 400;
-    margin-left: 80px;
+    margin-left: 75px;
     text-decoration: none;
 }
 
-.header>#menu>.menu-text:hover {
-    color: rgb(76, 115, 120);
+.header>#menu>.menu-text:hover,
+.header>#menu>.menu-text:visited:hover {
+    color: rgb(91, 116, 120);
 }
 
 .banner {
@@ -71,29 +74,32 @@ button {
 }
 
 #banner-text {
+    background-color: rgba(65, 70, 74, .5);
+    padding: 20px 0;
     position: relative;
-    top: -385px;
+    top: -360px;
 }
 
 h1 {
     /* site title */
-    color: whitesmoke;
-    font-size: 80px;
+    color: rgb(249, 249, 249);
+    font-size: 98px;
     font-weight: 350;
     letter-spacing: 11px;
-    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-top: 30px;
     text-shadow: 2px 2px 1px rgb(65, 70, 74);
 }
 
 h2 {
     /* tagline */
-    color: whitesmoke;
+    color: rgb(249, 249, 249);
     font-size: 40px;
     font-style: italic;
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 45px;
-    margin-top: -40px;
+    margin-top: -0px;
     text-shadow: 2px 2px 1px rgb(65, 70, 74);
     text-wrap: wrap;
 }
@@ -108,7 +114,7 @@ h2 {
 
 #banner-button:hover {
     background-color: rgb(65, 70, 74);
-    color: whitesmoke;
+    color: rgb(249, 249, 249);
 }
 
 .spencer {
@@ -128,7 +134,7 @@ h2 {
 
 .bio {
     background-color: rgb(65, 70, 74);
-    color: whitesmoke;
+    color: rgb(249, 249, 249);
     margin: 8px 8px 8px 10px;
     padding: 0px 10px;
 }
@@ -143,14 +149,14 @@ h3 {
 h4 {
     /* prof title, box titles */
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 325;
     margin: 15px 0 0 0;
 }
 
 p {
     font-family: 'Neuton', serif;
     font-size: 18px;
-    font-weight: 250;
+    font-weight: 350;
     letter-spacing: .5px;
     line-height: 21px;
     margin: 10px 0 5px 0;
@@ -166,15 +172,15 @@ p {
 
 .boxes>.specialties,
 .boxes>.treatments {
-    background-color: rgb(212, 194, 182);
+    background-color: rgb(201, 193, 182);
     color: rgb(65, 70, 74);
     text-align: center;
     width: 33.3%
 }
 
 .boxes>.telehealth {
-    background-color: rgb(76, 115, 120);
-    color: whitesmoke;
+    background-color: rgb(91, 116, 120);
+    color: rgb(249, 249, 249);
     text-align: center;
     width: 33.4%;
 }
@@ -188,17 +194,18 @@ hr {
 
 .specialties>p,
 .treatments>p {
-    font-weight: 350;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
 .telehealth>p {
-    margin: 10px 20px 0px 20px;
+    font-weight: 275;
+    margin: 10px 15px 0px 15px;
 }
 
 .telehealth>p>a:link,
 .telehealth>p>a:visited {
-    color: whitesmoke;
+    color: rgb(249, 249, 249);
 }
 
 .telehealth>p>a:hover,
@@ -207,23 +214,23 @@ hr {
 }
 
 .process {
-    background-color: rgb(76, 115, 120);
+    background-color: rgb(65, 70, 74);
     padding: 3px 30px 15px 10px;
     position: relative;
     top: 65px;
 }
 
 .process>h3 {
-    color: whitesmoke;
+    color: rgb(249, 249, 249);
 }
 
 .collapsible {
-    background-color: rgb(212, 194, 182);
+    background-color: rgb(249, 249, 249);
     border: none;
     color: rgb(65, 70, 74);
     cursor: pointer;
     font-size: 18px;
-    font-weight: 325;
+    font-weight: 350;
     margin: 10px 0 0 10px;
     outline: none;
     padding: 18px;
@@ -233,7 +240,8 @@ hr {
 
 .active,
 .collapsible:hover {
-    background-color: whitesmoke;
+    background-color: rgb(201, 193, 182);
+    color: rgb(65, 70, 74);
 }
 
 .collapsible:after {
@@ -250,7 +258,7 @@ hr {
 }
 
 .content {
-    background-color: whitesmoke;
+    background-color: rgb(249, 249, 249);
     color: rgb(65, 70, 74);
     left: 10px;
     max-height: 0;
@@ -261,40 +269,40 @@ hr {
 }
 
 footer {
-    color: rgb(65, 70, 74);
-    background-color: whitesmoke;
-    position: relative;
-    top: 65px;
-    width: 100%;
+    background-color: rgb(91, 116, 120);
+    color: rgb(249, 249, 249);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    position: relative;
+    top: 65px;
+    width: 100%;
     z-index: 1;
 }
 
 h5 {
     font-family: 'Neuton', serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: .5px;
     margin: 5px 0px 0px 0px;
 }
 
 .footer-list>ul {
-    list-style: none;
     font-family: 'Neuton', serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: .5px;
+    list-style: none;
     margin-top: 0px;
     padding-left: 20px;
 }
 
 .copyright {
-    background-color: whitesmoke;
+    background-color: rgb(249, 249, 249);
     position: relative;
     text-align: center;
-    top: 45px;
+    top: 48px;
     z-index: 1;
 }
 
